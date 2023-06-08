@@ -2,6 +2,7 @@ public class Conta {
 
     double saldoConta;
     String numero;
+	String nomeCliente;
 
     public double consultarSaldoAtual() {
 
@@ -13,4 +14,12 @@ public class Conta {
         saldoConta = saldoConta - valor;
 
     }
+	
+	 
+    public void cancelar(){
+		
+        System.out.println("Conta cancelada");
+		
+    }
+	
 }
