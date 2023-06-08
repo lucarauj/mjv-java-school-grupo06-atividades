@@ -22,7 +22,6 @@ public class Conta {
         System.out.println("Conta cancelada");
 		
     }
-
     
     public void transferirValor(String numeroConta, double valor){
         System.out.println("A conta " + numeroConta + " recebeu uma transferência do valor " + valor)
