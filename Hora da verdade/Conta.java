@@ -1,8 +1,16 @@
 public class Conta {
-   
-   double saldoConta;
 
-   public double consultarSaldoAtual() {
-      return saldoConta;   
-   }
+    double saldoConta;
+    String numero;
+
+    public double consultarSaldoAtual() {
+
+        return saldoConta;
+    }
+
+    public void sacar(int valor) {
+
+        saldoConta = saldoConta - valor;
+
+    }
 }
