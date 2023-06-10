@@ -4,7 +4,7 @@ public class Conta {
     String numero;
     String nomeCliente;
     String agencia;
-    Date dataNascimento = new Date();
+    Date dataNascimento;
 
     public double consultarSaldoAtual() {
 
