@@ -4,6 +4,7 @@ public class Conta {
     String numero;
     String nomeCliente;
     String agencia;
+    Date dataNascimento;
 
     public double consultarSaldoAtual() {
 
@@ -27,5 +28,9 @@ public class Conta {
         System.out.println("A conta " + numeroConta + " recebeu uma transferência do valor " + valor)
 
     } 
+	
+    public String consultarExtratoEntreDatas(Date dataInicio, Date dataFim){
+      return "O extrato é %EXTRATO%.";
+    }
 	
 }
