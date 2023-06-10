@@ -30,7 +30,7 @@ public class Conta {
     } 
 	
     public String consultarExtratoEntreDatas(Date dataInicio, Date dataFim){
-      return "O extrato é %EXTRATO%";
+      return "O extrato é %EXTRATO%.";
     }
 	
 }
