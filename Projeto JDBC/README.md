@@ -48,7 +48,7 @@ CREATE TABLE professores (
 
 <br>
 
-## Resultado da execução dos métodos da IDE e no pgAdmin
+## Resultado da execução dos métodos no IntelliJ e no pgAdmin
 
 ### INSERIR
 
