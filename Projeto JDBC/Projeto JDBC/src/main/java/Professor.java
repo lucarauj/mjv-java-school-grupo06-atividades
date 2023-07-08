@@ -1,3 +1,4 @@
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -7,7 +8,7 @@ public class Professor {
     private Integer id;
     private String nome;
     private LocalDate dataNascimento;
-    private LocalTime cargaHoraria;
+    private Duration cargaHoraria;
     private Double valorHora;
     private boolean estrangeiro;
     private Integer horasDisponiveis;
@@ -38,11 +39,11 @@ public class Professor {
         this.dataNascimento = dataNascimento;
     }
 
-    public LocalTime getCargaHoraria() {
+    public Duration getCargaHoraria() {
         return cargaHoraria;
     }
 
-    public void setCargaHoraria(LocalTime cargaHoraria) {
+    public void setCargaHoraria(Duration cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
 
