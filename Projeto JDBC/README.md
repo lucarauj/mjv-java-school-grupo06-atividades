@@ -29,7 +29,7 @@
 
 <br>
 
-## Resultado da execução dos métodos da IDE e no Postgres
+## Resultado da execução dos métodos da IDE e no pgAdmin
 
 ### INSERIR
 
