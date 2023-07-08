@@ -11,10 +11,11 @@ public class AplicacaoJDBC {
         Conexao.iniciarConexao();
 
         professorCrud = new ProfessorCrud();
-//        incluirProfessor();
-//        alterarProfessor();
-//        listarProfessores();
-//        excluirProfessor();
+        incluirProfessor();
+        alterarProfessor();
+        listarProfessores();
+        listarProfessorPorId();
+        excluirProfessor();
     }
     private static void incluirProfessor(){
 
@@ -33,7 +34,7 @@ public class AplicacaoJDBC {
     private static void alterarProfessor(){
         Professor professor  = professorCrud.findById(1);
         if(professor!=null) {
-            professor.setNome("Aroldo Nascimento Dias");
+            professor.setNome("Manuel Nascimento Dias");
             professorCrud.update(professor);
         } else {
             System.out.println("Não existe professor com o id informado!");
@@ -44,6 +45,11 @@ public class AplicacaoJDBC {
         for(Professor p : professores){
             System.out.println(p.getId() + "--" + p.getNome());
         }
+    }
+
+    private static void listarProfessorPorId(){
+        Professor professor = professorCrud.findById(2);
+        System.out.println(professor.getId() + "--" + professor.getNome());
     }
     private static void excluirProfessor(){
         int linhasDeletadas = professorCrud.delete(1);
